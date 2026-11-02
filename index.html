@@ -668,7 +668,15 @@ footer{text-align:center;font-size:13px;color:#86868B;padding:0 24px calc(48px +
 </main>
 <footer>Designed and built by Chandra Gompa.</footer>
 
-<script data-goatcounter="https://chandragompa.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script>
+(function(){var E='https://chandragompa.goatcounter.com/count';
+function send(q){try{var i=new Image();i.src=E+'?'+q+'&rnd='+Math.random().toString(36).slice(2);}catch(e){}}
+function enc(v){return encodeURIComponent(v||'');}
+if(location.hostname.indexOf('github.io')>-1){
+  send('p='+enc(location.pathname)+'&t='+enc(document.title)+'&r='+enc(document.referrer)+'&s='+screen.width+','+screen.height+','+(window.devicePixelRatio||1));
+  document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('[data-goatcounter-click]');if(a)send('p='+enc(a.getAttribute('data-goatcounter-click'))+'&t='+enc(a.textContent.trim())+'&e=true');},true);
+}})();
+</script>
 <noscript><img src="https://chandragompa.goatcounter.com/count?p=/noscript" alt="" width="1" height="1" style="position:absolute;opacity:0"></noscript>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script>
